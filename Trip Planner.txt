@@ -1,0 +1,42 @@
+----CREATE Database
+----use this datatbase 
+--GO
+--CREATE Table TripUser(
+--ID int NOT NUll PRIMARY KEY,
+--NAME VARCHAR(30),
+--Address VARCHAR(80),
+--Phone NCHAR(10) NOT NULL,
+--DOB DATE,
+--);
+--GO
+--CREATE Table Passport(
+--ID int NOT NULL PRIMARY KEY,
+--PassportNumber NVARCHAR(9) NOT NULL,
+--ExpDate DATE NOT NULL,
+--Address VARCHAR(80) NOT NULL,
+--);
+--GO
+--CREATE Table Trip(
+--ID int NOT NULL PRIMARY KEY,
+--Budget FLOAT NOT NULL,
+--StartingDest NVARCHAR(25) NOT NULL,
+--FinalDest NVARCHAR(25) NOT NULL,
+--TravelMode NVARCHAR(15) NOT NULL,
+--StartDate DATE NOT NULL,
+--EndDate DATE NOT NULL,
+--);
+--GO
+--CREATE Table Hotel(
+--ID int NOT NULL PRIMARY KEY,
+--CheckIn DATETIME NOT NULL,
+--CheckOut DATETIME NOT NULL,
+--CostPerNight FLOAT NOT NULL,
+--Address VARCHAR(30) NOT NULL,
+--Phone NCHAR(10) NOT NULL,
+--);
+--GO
+--ALTER TABLE TripUser
+--ADD FKPassport NVARCHAR(9) NOT NULL
+--ALTER TABLE TripUser
+--ADD FOREIGN KEY (FKPassport) REFERENCES Passport(PassportNum)
+--);
